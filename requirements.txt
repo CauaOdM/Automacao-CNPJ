@@ -1,0 +1,12 @@
+pandas
+pyautogui
+pyperclip
+opencv-python
+logging
+python-dotenv
+tenacity
+openpyxl
+pyscreeze
+opencv-python
+Pillow
+streamlit
