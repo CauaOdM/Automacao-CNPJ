@@ -117,10 +117,6 @@ if st.button("Iniciar"):
             if t>=len(cnpjs):
                 break
 
-            # ==========================================
-            # DESCOBRE QUAL RESULTADO APARECEU
-            # ==========================================
-
             begin = time.monotonic()
             tipo_resultado = None
             nova = None
@@ -152,15 +148,10 @@ if st.button("Iniciar"):
 
                         time.sleep(breaktime)
 
-            # ==========================================
-            # CERTIDÃO JÁ EXISTENTE
-            # ==========================================
-
             begin = time.monotonic()
             campo_found = False
 
             while not campo_found:
-                # Primeiro verifica se a próxima tela já abriu
                 try:
                     campo = gui.locateCenterOnScreen(
                         "assets/campo.png",
